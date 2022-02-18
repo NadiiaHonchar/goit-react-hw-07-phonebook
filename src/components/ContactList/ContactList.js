@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useSelector, useDispatch } from "react-redux";
 import style from "./ContactList.module.css";
-import { delContact } from "../../redux/actions";
+import { delContact} from "../../redux/contacts_operation";
 import ElementContacts from "../ElementContacts";
 
 const ContactList = () => {
@@ -17,6 +17,8 @@ const ContactList = () => {
   );
 
   const dispath = useDispatch();
+  
+  
 
   return (
     <ul className={style.ulStyle}>
