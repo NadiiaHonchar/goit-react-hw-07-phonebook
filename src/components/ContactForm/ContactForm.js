@@ -10,7 +10,7 @@ function ContactForm() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
 
-  useEffect(()=>dispatch(getContact()),[dispatch])
+  useEffect(() => dispatch(getContact()), [dispatch]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.currentTarget;
@@ -75,7 +75,6 @@ function ContactForm() {
 }
 
 export default ContactForm;
-
 
 // import { useState, useEffect } from "react";
 // import { useDispatch } from "react-redux";
@@ -151,4 +150,3 @@ export default ContactForm;
 // }
 
 // export default ContactForm;
-
